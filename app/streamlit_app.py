@@ -14,11 +14,11 @@ from transformers import (
 def load_model():
 
     tokenizer = AutoTokenizer.from_pretrained(
-        "models/distilbert_final"
+        "hrishijad/distilbert-movie-review-sentiment"
     )
 
     model = AutoModelForSequenceClassification.from_pretrained(
-        "models/distilbert_final"
+        "hrishijad/distilbert-movie-review-sentiment"
     )
 
     model.eval()
